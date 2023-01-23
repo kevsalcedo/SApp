@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MVVM Foundation</string>
+    <string name="app_name">SativApp</string>
     <string name="text_label_1">tab 1</string>
     <string name="text_label_2">tab 2</string>
 
@@ -10,4 +10,6 @@
     <string name="feed_label">Feed</string>
     <string name="add_record">ADD RECORD</string>
     <string name="element_text">default viewholder text</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_phone_number">Sign in with phone number</string>
 </resources>
