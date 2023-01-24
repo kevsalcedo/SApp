@@ -56,4 +56,18 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         return ActivityMainBinding.inflate(inflater)
     }
 
+    //TODO: add navigation View functionality
+    /*
+    topAppBar.setNavigationOnClickListener {
+    drawerLayout.open()
+}
+
+navigationView.setNavigationItemSelectedListener { menuItem ->
+    // Handle menu item selected
+    menuItem.isChecked = true
+    drawerLayout.close()
+    true
+}
+     */
+
 }

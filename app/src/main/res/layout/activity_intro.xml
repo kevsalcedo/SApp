@@ -31,16 +31,18 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_in_with_google"
         android:backgroundTint="@color/white"
-        android:textColor="@color/text_color_button_gren"
+        android:textColor="@color/text_color_button_green"
         />
 
     <Button
         android:id="@+id/btn_sign_in_with_phone_number"
+        style="@style/Widget.Material3.Button.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_with_phone_number"
         android:backgroundTint="@color/white"
-        android:textColor="@color/text_color_button_gren"
+        android:textColor="@color/text_color_button_green"
+        android:drawableLeft="@drawable/ic_phone_button"
         />
 
 
