@@ -1,73 +1,41 @@
 package com.graymandev.mvvmfoundation
 
 import android.view.LayoutInflater
-import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import android.view.Menu
+import android.view.MenuItem
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.chetantuteja.easybinding.BindingActivity
-import com.google.android.material.navigation.NavigationBarView
 import com.graymandev.mvvmfoundation.databinding.ActivityMainBinding
-import com.graymandev.mvvmfoundation.view.navigation.ViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupWithNavController
 
 @AndroidEntryPoint
 class MainActivity : BindingActivity<ActivityMainBinding>() {
-
-    private val onNavigationItemSelectedListener =
-        NavigationBarView.OnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.page_controls -> {
-                    binding.viewPager.currentItem = 0
-                    return@OnItemSelectedListener true
-                }
-                R.id.page_feed -> {
-                    binding.viewPager.currentItem = 1
-                    return@OnItemSelectedListener true
-                }
-                else -> {
-                    false
-                }
-            }
-        }
-
-    private val onPageChangeCallback = object : OnPageChangeCallback() {
-        override fun onPageSelected(position: Int) {
-            super.onPageSelected(position)
-            when (position) {
-                0 -> binding.bottomNavigation.menu.findItem(R.id.page_controls).isChecked = true
-                1 -> binding.bottomNavigation.menu.findItem(R.id.page_feed).isChecked = true
-            }
-        }
-    }
+    private lateinit var navController: NavController
+    private lateinit var thisMenu: Menu
 
     //This is called after onCreate, so binding is not null and can be safely used
     override fun init() {
-        //Create an adapter
-        val viewPagerAdapter = ViewPagerAdapter(this)
-        binding.viewPager.adapter = viewPagerAdapter
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment.navController
+        binding.navigationMenu.setupWithNavController(navController)
+        thisMenu = binding.navigationMenu.menu
+    }
 
-        //When clicking a tab, change the fragment to show
-        binding.bottomNavigation.setOnItemSelectedListener(onNavigationItemSelectedListener)
+    fun navigateToStores() {
+        val storesItem = thisMenu.findItem(R.id.storesListFragment)
+        onOptionsItemSelected(storesItem)
+    }
 
-        //When sliding from a page to another, update the bottom navigation
-        binding.viewPager.registerOnPageChangeCallback(onPageChangeCallback)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
 
     //This happens inside onCreate
     override fun setupViewBinding(inflater: LayoutInflater): ActivityMainBinding {
         return ActivityMainBinding.inflate(inflater)
     }
-
-    //TODO: add navigation View functionality
-    /*
-    topAppBar.setNavigationOnClickListener {
-    drawerLayout.open()
-}
-
-navigationView.setNavigationItemSelectedListener { menuItem ->
-    // Handle menu item selected
-    menuItem.isChecked = true
-    drawerLayout.close()
-    true
-}
-     */
-
 }
