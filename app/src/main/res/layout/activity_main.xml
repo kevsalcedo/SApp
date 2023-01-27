@@ -53,6 +53,20 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/search_bar_hint"
                 />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                />
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/circle_indicator_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/background_green_primary"
+
+                />
+
             <androidx.fragment.app.FragmentContainerView
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:id="@+id/nav_host_fragment"
