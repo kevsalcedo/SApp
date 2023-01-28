@@ -13,6 +13,7 @@
 
     <color name="text_color_button_green">#176316</color>
 
+    <color name="transparent">#00000000 </color>
 
 
 </resources>

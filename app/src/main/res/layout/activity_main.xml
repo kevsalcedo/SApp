@@ -63,8 +63,8 @@
                 android:id="@+id/circle_indicator_carousel"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/background_green_primary"
-
+                android:background="@color/transparent"
+                app:ci_drawable="@drawable/circle_indicator_green"
                 />
 
             <androidx.fragment.app.FragmentContainerView
