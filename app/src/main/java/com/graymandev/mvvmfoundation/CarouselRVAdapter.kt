@@ -7,11 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CarouselRVAdapter(private val promotions: List<String>) :
+class CarouselRVAdapter(private val promotions: List<Int>) :
     RecyclerView.Adapter<CarouselRVAdapter.CarouselItemViewHolder>() {
 
     class CarouselItemViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        val itemPromotions: TextView = itemView.findViewById(R.id.textview_carousel)
+        val itemPromotions: ImageView = itemView.findViewById(R.id.image_view_carousel)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarouselItemViewHolder {
@@ -20,8 +20,7 @@ class CarouselRVAdapter(private val promotions: List<String>) :
     }
 
     override fun onBindViewHolder(holder: CarouselItemViewHolder, position: Int) {
-        val textView = holder.itemView.findViewById<TextView>(R.id.textview_carousel)
-        textView.text = promotions[position]
+        holder.itemPromotions.setImageResource(promotions[position])
     }
 
     override fun getItemCount(): Int {
