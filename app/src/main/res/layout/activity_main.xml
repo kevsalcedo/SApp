@@ -62,7 +62,7 @@
             <me.relex.circleindicator.CircleIndicator3
                 android:id="@+id/circle_indicator_carousel"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="15dp"
                 android:background="@color/transparent"
                 app:ci_drawable="@drawable/circle_indicator_green"
                 />
