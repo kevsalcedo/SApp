@@ -1,6 +1,6 @@
 package com.graymandev.mvvmfoundation
 
-import android.content.res.Resources
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
@@ -11,11 +11,7 @@ import com.graymandev.mvvmfoundation.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.CompositePageTransformer
-import androidx.viewpager2.widget.MarginPageTransformer
-import androidx.viewpager2.widget.ViewPager2
-import com.graymandev.mvvmfoundation.view.navigation.ViewPagerAdapter
+import com.graymandev.mvvmfoundation.view.main.CarouselRVAdapter
 import me.relex.circleindicator.CircleIndicator3
 
 @AndroidEntryPoint
@@ -64,6 +60,10 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         addToPromotionsList(R.drawable.hierbabuena_leaves)
         addToPromotionsList(R.drawable.lavanda_flower)
         addToPromotionsList(R.drawable.lobelia_flower)
+    }
+
+    private fun autoSliderCarousel(){
+        //TODO create the auto slider (5seg)
     }
 
 

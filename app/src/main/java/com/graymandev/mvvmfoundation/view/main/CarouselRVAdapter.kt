@@ -1,11 +1,11 @@
-package com.graymandev.mvvmfoundation
+package com.graymandev.mvvmfoundation.view.main
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.graymandev.mvvmfoundation.R
 
 class CarouselRVAdapter(private val promotions: List<Int>) :
     RecyclerView.Adapter<CarouselRVAdapter.CarouselItemViewHolder>() {

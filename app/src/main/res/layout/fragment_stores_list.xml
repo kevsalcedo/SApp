@@ -14,6 +14,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
+            android:layout_height="110dp"
             android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
@@ -43,22 +44,14 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
+            android:layout_height="110dp"
             android:layout_margin="8dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             >
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Title"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"
-                    android:padding="3dp"
-                    />
+                android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
@@ -67,7 +60,15 @@
                     android:contentDescription="@string/image_contentDescription"
                     android:background="@color/black"
                     />
-            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:background="@color/white_transparent"
+                    android:padding="3dp"/>
+
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 

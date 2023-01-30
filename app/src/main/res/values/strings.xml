@@ -27,4 +27,12 @@
     <string name="stores">Stores</string>
     <string name="home">Home</string>
     <string name="go_to_stores">Stores</string>
+    <string name="text_card_one">Consumables</string>
+    <string name="text_card_two">Tools</string>
+    <string name="text_card_three">Courses</string>
+    <string name="text_card_four">Aromas</string>
+    <string name="text_card_five">Medicinal</string>
+    <string name="text_card_six">Fashion</string>
+    <string name="text_card_seven">Bakery</string>
+    <string name="text_card_eight">Accessories</string>
 </resources>

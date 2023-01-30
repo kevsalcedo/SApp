@@ -21,9 +21,9 @@
                 android:id="@+id/tv_actual_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_text_view_address_main"
                 android:text="@string/adress_dummy"
-                android:textSize="18sp"
+                android:textSize="@dimen/text_size_address_main"
                 android:textStyle="bold"
                 android:gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
@@ -33,15 +33,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_topbar_icon"
                 android:src="@drawable/ic_location_green"
                 android:contentDescription="@string/image_contentDescription"
                />
 
             <ImageView
+                android:id="@+id/ic_shopping_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="@dimen/padding_topbar_icon"
                 android:src="@drawable/ic_shopping_cart_green"
                 android:contentDescription="@string/image_contentDescription"
                 />
@@ -57,12 +58,12 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/view_pager_carousel"
                 android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_height="@dimen/height_carousel_view_pager"
                 />
             <me.relex.circleindicator.CircleIndicator3
                 android:id="@+id/circle_indicator_carousel"
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="@dimen/height_circle_indicator"
                 android:background="@color/transparent"
                 app:ci_drawable="@drawable/circle_indicator_green"
                 />
