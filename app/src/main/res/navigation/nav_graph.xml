@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/sectionListFragment"
-        android:name="com.graymandev.mvvmfoundation.view.main.SectionListFragment"
+        android:name="com.graymandev.sapp.view.main.SectionListFragment"
         android:label="fragment_section_list"
         tools:layout="@layout/fragment_section_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/storesListFragment"
-        android:name="com.graymandev.mvvmfoundation.view.stores.StoresListFragment"
+        android:name="com.graymandev.sapp.view.stores.StoresListFragment"
         android:label="fragment_stores_list"
         tools:layout="@layout/fragment_stores_list" >
         <action

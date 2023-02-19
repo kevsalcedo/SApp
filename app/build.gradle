@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.graymandev.mvvmfoundation'
+    namespace 'com.graymandev.sapp'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.graymandev.mvvmfoundation"
+        applicationId "com.graymandev.sapp"
         minSdk 28
         targetSdk 32
         versionCode 1
