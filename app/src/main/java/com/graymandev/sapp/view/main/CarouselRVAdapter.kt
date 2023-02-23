@@ -7,8 +7,9 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.graymandev.sapp.R
 
-class CarouselRVAdapter(private val promotions: List<Int>) :
-    RecyclerView.Adapter<CarouselRVAdapter.CarouselItemViewHolder>() {
+class CarouselRVAdapter(
+    private val promotionsList: List<Int>
+    ) : RecyclerView.Adapter<CarouselRVAdapter.CarouselItemViewHolder>() {
 
     class CarouselItemViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val itemPromotions: ImageView = itemView.findViewById(R.id.image_view_carousel)
@@ -20,11 +21,8 @@ class CarouselRVAdapter(private val promotions: List<Int>) :
     }
 
     override fun onBindViewHolder(holder: CarouselItemViewHolder, position: Int) {
-        holder.itemPromotions.setImageResource(promotions[position])
+        holder.itemPromotions.setImageResource(promotionsList[position])
     }
 
-    override fun getItemCount(): Int {
-        return promotions.size
-    }
-
+    override fun getItemCount(): Int = promotionsList.size
 }

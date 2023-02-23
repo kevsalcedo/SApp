@@ -16,5 +16,8 @@
 
     <color name="transparent">#00000000 </color>
 
+    <color name="rate_numbers_color">#FFAC14 </color>
+    <color name="delivery_color">#5C5C5C </color>
+
 
 </resources>

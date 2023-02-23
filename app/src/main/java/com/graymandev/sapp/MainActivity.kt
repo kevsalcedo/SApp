@@ -20,7 +20,6 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
 
     private var promotionsList = mutableListOf<Int>()
 
-
     //This is called after onCreate, so binding is not null and can be safely used
     override fun init() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
