@@ -12,4 +12,27 @@
     <string name="element_text">default viewholder text</string>
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="sign_in_with_phone_number">Sign in with phone number</string>
+    <string name="profile">profile</string>
+    <string name="settings">settings</string>
+    <string name="profile_subheader_title">Your profile</string>
+    <string name="hi_there_header_title">Hi there,</string>
+    <string name="satifriend_header_text">SatiFriend!</string>
+    <string name="image_contentDescription">image</string>
+    <string name="information_subheader_title">Information</string>
+    <string name="about_us">About us</string>
+    <string name="want_to_sell_with_us">Do you want to sell with us?</string>
+    <string name="adress_dummy">Cll 4 # 20 - 69</string>
+    <string name="search_bar_hint">What are you looking for?</string>
+    <string name="search_bar_desc">General Search Bar</string>
+    <string name="stores">Stores</string>
+    <string name="home">Home</string>
+    <string name="go_to_stores">Stores</string>
+    <string name="text_card_one">Consumables</string>
+    <string name="text_card_two">Tools</string>
+    <string name="text_card_three">Courses</string>
+    <string name="text_card_four">Aromas</string>
+    <string name="text_card_five">Medicinal</string>
+    <string name="text_card_six">Fashion</string>
+    <string name="text_card_seven">Bakery</string>
+    <string name="text_card_eight">Accessories</string>
 </resources>
