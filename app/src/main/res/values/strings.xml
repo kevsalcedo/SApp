@@ -21,12 +21,13 @@
     <string name="information_subheader_title">Information</string>
     <string name="about_us">About us</string>
     <string name="want_to_sell_with_us">Do you want to sell with us?</string>
-    <string name="adress_dummy">Cll 4 # 20 - 69</string>
+    <string name="address_dummy">Cll 4 # 20 - 69</string>
     <string name="search_bar_hint">What are you looking for?</string>
     <string name="search_bar_desc">General Search Bar</string>
     <string name="stores">Stores</string>
     <string name="home">Home</string>
     <string name="go_to_stores">Stores</string>
+    <string name="title_activity_login">LoginActivity</string>
     <string name="text_card_consumables">Consumables</string>
     <string name="text_card_tools">Tools</string>
     <string name="text_card_courses">Courses</string>
