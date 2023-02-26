@@ -34,7 +34,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    app:srcCompat="@drawable/ic_sativapp_logo"
+                    app:srcCompat="@drawable/ic_death_flower"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/image_contentDescription"
                     android:background="@color/black"
@@ -55,7 +55,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    app:srcCompat="@drawable/ic_sativapp_logo"
+                    app:srcCompat="@drawable/ic_death_flower"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/image_contentDescription"
                     android:background="@color/black"

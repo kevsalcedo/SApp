@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/joint"/>
+        app:lottie_rawRes="@raw/flower"/>
 
 
 </LinearLayout>

@@ -65,4 +65,5 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
     }
 
 
+
 }

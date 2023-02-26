@@ -17,7 +17,7 @@
     <!-- Splash screen style -->
     <style name="Theme.App.Starting" parent= "Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/background_green_primary</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_sativapp_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_death_flower</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
         <item name="postSplashScreenTheme">@style/Theme.MVVMFoundation</item>
     </style>
