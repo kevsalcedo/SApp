@@ -1,16 +1,20 @@
 package com.graymandev.sapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import com.chetantuteja.easybinding.BindingActivity
 import com.graymandev.sapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupWithNavController
+import com.graymandev.sapp.view.login.LoginActivity
 import com.graymandev.sapp.view.main.CarouselRVAdapter
+import com.graymandev.sapp.view.navigation.IntentLauncher
 import me.relex.circleindicator.CircleIndicator3
 
 @AndroidEntryPoint
@@ -25,7 +29,11 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
         binding.navigationMenu.setupWithNavController(navController)
+        val appBarConfiguration = AppBarConfiguration(navController.graph, binding.drawerLayout)
+
+        binding.topAppBar.setupWithNavController(navController,appBarConfiguration)
         thisMenu = binding.navigationMenu.menu
+
 
         postToPromotionsList()
 
@@ -33,6 +41,18 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
 
         val promotionsIndicator: CircleIndicator3 = findViewById<CircleIndicator3>(R.id.circle_indicator_carousel)
         promotionsIndicator.setViewPager(binding.viewPagerCarousel)
+
+        binding.topAppBar.setOnMenuItemClickListener{ menuItem ->
+            when (menuItem.itemId) {
+                R.id.profile -> {
+                    IntentLauncher.goToLogin(this)
+                    false
+                }
+                else -> {
+                    false
+                }
+            }
+        }
 
     }
 

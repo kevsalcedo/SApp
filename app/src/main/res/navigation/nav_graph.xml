@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/sectionListFragment"
         android:name="com.graymandev.sapp.view.main.SectionListFragment"
-        android:label="fragment_section_list"
+        android:label="SativApp"
         tools:layout="@layout/fragment_section_list" >
         <action
             android:id="@+id/action_sectionListFragment_to_storesListFragment"
@@ -17,10 +17,18 @@
     <fragment
         android:id="@+id/storesListFragment"
         android:name="com.graymandev.sapp.view.stores.StoresListFragment"
-        android:label="fragment_stores_list"
+        android:label="Stores"
         tools:layout="@layout/fragment_stores_list" >
         <action
             android:id="@+id/action_storesListFragment_to_sectionListFragment"
             app:destination="@id/sectionListFragment" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.graymandev.sapp.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.graymandev.sapp.view.login.LoginActivity"
+        android:label="LoginActivity" />
 </navigation>
