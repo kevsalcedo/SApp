@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/sectionListFragment"
-        android:name="com.graymandev.sapp.view.main.SectionListFragment"
+        android:name="com.graymandev.sapp.view.main.CategoryCardsListFragment"
         android:label="SativApp"
-        tools:layout="@layout/fragment_section_list" >
+        tools:layout="@layout/fragment_category_cards_list" >
         <action
             android:id="@+id/action_sectionListFragment_to_storesListFragment"
             app:destination="@id/storesListFragment" />

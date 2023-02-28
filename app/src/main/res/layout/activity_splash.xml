@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.splash.SplashActivity"
+    tools:context=".splash.SplashActivity"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@color/background_green_primary"
@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/flower"/>
+        app:lottie_rawRes="@raw/flower"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>

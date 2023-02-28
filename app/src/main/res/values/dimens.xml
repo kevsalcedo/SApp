@@ -19,5 +19,5 @@
     <dimen name="height_carousel_view_pager">210dp</dimen>
     <dimen name="height_circle_indicator">15dp</dimen>
     <dimen name="margin_bottom_item_store_content">10dp</dimen>
-    <dimen name="padding_item_store_content">10dp</dimen>
+    <dimen name="padding_item_store_content">5dp</dimen>
 </resources>

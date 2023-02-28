@@ -30,9 +30,6 @@ class CategoryCardAdapter(
 
     override fun onBindViewHolder(holder: CategoryCardItemViewHolder, position: Int) {
         val model = categoryCardList[position]
-
-        //holder.itemView.findViewById<TextView>(R.id.text_view_category_card).text = model.name
-
         holder.render(model)
     }
 
