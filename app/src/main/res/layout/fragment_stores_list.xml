@@ -6,73 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.stores.StoresListFragment">
 
-    <GridLayout
-        android:padding="8dp"
-        android:columnCount="2"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_stores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/grid_layout_padding"
             >
-            <LinearLayout
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Title"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"
-                    android:padding="3dp"
-                    />
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    app:srcCompat="@drawable/ic_death_flower"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/image_contentDescription"
-                    android:background="@color/black"
-                    />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </androidx.recyclerview.widget.RecyclerView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            >
-            <RelativeLayout
-                android:layout_width="180dp"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    app:srcCompat="@drawable/ic_death_flower"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/image_contentDescription"
-                    android:background="@color/black"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Title"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"
-                    android:background="@color/white_transparent"
-                    android:padding="3dp"/>
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-
-
-    </GridLayout>
+    </LinearLayout>
 
 </FrameLayout>

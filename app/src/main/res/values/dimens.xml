@@ -8,10 +8,10 @@
     <dimen name="intro_screen_app_name_text_size">80sp</dimen>
     <dimen name="grid_layout_padding">8dp</dimen>
     <dimen name="height_card_view_category">110dp</dimen>
-    <dimen name="margin_card_view_category">8dp</dimen>
+    <dimen name="margin_card_view_category">12dp</dimen>
     <dimen name="corner_radius_card_view_category">10dp</dimen>
-    <dimen name="elevation_card_view_category">10dp</dimen>
-    <dimen name="width_card_view_category">180dp</dimen>
+    <dimen name="elevation_card_view_category">5dp</dimen>
+    <dimen name="width_card_view_category">170dp</dimen>
     <dimen name="padding_text_view_sections_title">3dp</dimen>
     <dimen name="padding_text_view_address_main">10dp</dimen>
     <dimen name="text_size_address_main">18sp</dimen>
@@ -19,5 +19,5 @@
     <dimen name="height_carousel_view_pager">210dp</dimen>
     <dimen name="height_circle_indicator">15dp</dimen>
     <dimen name="margin_bottom_item_store_content">10dp</dimen>
-    <dimen name="padding_item_store_content">10dp</dimen>
+    <dimen name="padding_item_store_content">5dp</dimen>
 </resources>

@@ -5,9 +5,9 @@ import com.graymandev.sapp.model.CategoryCard
 
 class CategoryCardProvider {
     companion object{
-        val CategoryCardList = listOf<CategoryCard>(
+        val categoryCardList = listOf<CategoryCard>(
             CategoryCard(
-                1, "consumables", R.drawable.image_consumables
+                1, "Consumables", R.drawable.image_consumables
             ),
             CategoryCard(
                 2, "Tools", R.drawable.image_garden_tools

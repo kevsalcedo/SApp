@@ -11,6 +11,7 @@
         android:layout_margin="@dimen/margin_card_view_category"
         app:cardCornerRadius="@dimen/corner_radius_card_view_category"
         app:cardElevation="@dimen/elevation_card_view_category"
+        android:clickable="true"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,6 +31,7 @@
                 android:text="@string/text_card_consumables"
                 android:textAppearance="?attr/textAppearanceTitleMedium"
                 android:background="@color/white_transparent"
+                android:textColor="@color/black"
                 android:padding="@dimen/padding_text_view_sections_title"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

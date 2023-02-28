@@ -1,4 +1,4 @@
-package com.graymandev.sapp.view.splash
+package com.graymandev.sapp.splash
 
 import android.content.Intent
 import android.os.Handler

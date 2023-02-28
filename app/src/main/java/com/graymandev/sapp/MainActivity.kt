@@ -31,10 +31,10 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         binding.navigationMenu.setupWithNavController(navController)
         val appBarConfiguration = AppBarConfiguration(navController.graph, binding.drawerLayout)
 
-        binding.topAppBar.setupWithNavController(navController,appBarConfiguration)
+        binding.topAppBarMain.setupWithNavController(navController,appBarConfiguration)
         thisMenu = binding.navigationMenu.menu
 
-
+        // Adding the promotion images to the Carousel
         postToPromotionsList()
 
         binding.viewPagerCarousel.adapter = CarouselRVAdapter(promotionsList)
@@ -42,7 +42,7 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         val promotionsIndicator: CircleIndicator3 = findViewById<CircleIndicator3>(R.id.circle_indicator_carousel)
         promotionsIndicator.setViewPager(binding.viewPagerCarousel)
 
-        binding.topAppBar.setOnMenuItemClickListener{ menuItem ->
+        binding.topAppBarMain.setOnMenuItemClickListener{ menuItem ->
             when (menuItem.itemId) {
                 R.id.profile -> {
                     IntentLauncher.goToLogin(this)
@@ -74,6 +74,7 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
         promotionsList.add(image)
     }
 
+    // Function to add the promotion images to the Carousel
     private fun postToPromotionsList(){
         addToPromotionsList(R.drawable.hierbabuena_leaves)
         addToPromotionsList(R.drawable.lavanda_flower)
