@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SativApp</string>
+    <string name="app_name">SApp</string>
     <string name="text_label_1">tab 1</string>
     <string name="text_label_2">tab 2</string>
 
@@ -10,13 +10,13 @@
     <string name="feed_label">Feed</string>
     <string name="add_record">ADD RECORD</string>
     <string name="element_text">default viewholder text</string>
-    <string name="sign_in_with_google">Sign in with Google</string>
-    <string name="sign_in_with_phone_number">Sign in with phone number</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
     <string name="profile">profile</string>
     <string name="settings">settings</string>
     <string name="profile_subheader_title">Your profile</string>
     <string name="hi_there_header_title">Hi there,</string>
-    <string name="satifriend_header_text">SatiFriend!</string>
+    <string name="satifriend_header_text">My Friend!</string>
     <string name="image_contentDescription">image</string>
     <string name="information_subheader_title">Information</string>
     <string name="about_us">About us</string>
@@ -36,4 +36,17 @@
     <string name="text_card_fashion">Fashion</string>
     <string name="text_card_bakery">Bakery</string>
     <string name="text_card_accessories">Accessories</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="always_sing_in">Mark the checkbox if you want to stay loged in next time you start SApp.</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="cell_number">Cell phone number</string>
+    <string name="sexual_orientation">Orientation</string>
+    <string name="nickname">Nickname</string>
+    <string name="log_in">LOG IN</string>
+    <string name="register_message">Please complete all fields to register.</string>
 </resources>
