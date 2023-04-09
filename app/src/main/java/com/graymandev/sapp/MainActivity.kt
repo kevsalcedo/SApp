@@ -1,6 +1,7 @@
 package com.graymandev.sapp
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
@@ -54,6 +55,8 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
             }
         }
 
+        Log.d("MainActivity", "address_dummy = ${getString(R.string.address_dummy)}")
+
     }
 
     fun navigateToStores() {
@@ -76,8 +79,8 @@ class MainActivity : BindingActivity<ActivityMainBinding>() {
 
     // Function to add the promotion images to the Carousel
     private fun postToPromotionsList(){
-        addToPromotionsList(R.drawable.hierbabuena_leaves)
         addToPromotionsList(R.drawable.lavanda_flower)
+        addToPromotionsList(R.drawable.hierbabuena_leaves)
         addToPromotionsList(R.drawable.lobelia_flower)
     }
 
