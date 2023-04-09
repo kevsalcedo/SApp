@@ -7,7 +7,7 @@ class CategoryCardProvider {
     companion object{
         val categoryCardList = listOf<CategoryCard>(
             CategoryCard(
-                1, "Consumables", R.drawable.image_consumables
+                1, "Medicinal", R.drawable.image_medicinal
             ),
             CategoryCard(
                 2, "Tools", R.drawable.image_garden_tools
@@ -19,7 +19,7 @@ class CategoryCardProvider {
                 4, "Aromas", R.drawable.image_aromas
             ),
             CategoryCard(
-                5, "Medicinal", R.drawable.image_medicinal
+                5, "Consumables", R.drawable.image_consumables
             ),
             CategoryCard(
                 6, "Fashion", R.drawable.image_fashion
