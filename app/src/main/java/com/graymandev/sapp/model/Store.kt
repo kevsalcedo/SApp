@@ -8,7 +8,7 @@ data class Store(
     val id: Int,
     val name: String,
     val image: Int,
-    val score: Float,
+    val score: Double,
     val price: Int,
     val deliveryTime: Int,
     val latitude: Double,
