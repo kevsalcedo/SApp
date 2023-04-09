@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.intro.IntroActivity"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/background_green_primary"
+    android:gravity="center"
+    android:orientation="vertical"
     android:padding="40sp"
-    >
+    tools:context=".view.intro.IntroActivity">
 
-    <TextView
-        android:id="@+id/tv_app_name"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="150sp"
-        android:fontFamily="@font/cookie"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:textSize="@dimen/intro_screen_app_name_text_size"
-        android:textStyle="bold" />
+        android:elevation="10dp"
+        app:cardCornerRadius="16dp">
 
-    <Button
-        android:id="@+id/btn_sign_in_with_google"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_in_with_google"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/text_color_button_green"
-        />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/intro_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_intro" />
 
-    <Button
-        android:id="@+id/btn_sign_in_with_phone_number"
-        style="@style/Widget.Material3.Button.Icon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_in_with_phone_number"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/text_color_button_green"
-        android:drawableLeft="@drawable/ic_phone_button"
-        />
-
-
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
