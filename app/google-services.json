@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129513620794",
+    "project_id": "sapp-65fd0",
+    "storage_bucket": "sapp-65fd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129513620794:android:d595460ed74ec143f3bc03",
+        "android_client_info": {
+          "package_name": "com.graymandev.sapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129513620794-7jsk25lfi47gr4316rshgcmidtcugnt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlezAzehH4xonopVpMWk81uoiEtWxpc04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129513620794-7jsk25lfi47gr4316rshgcmidtcugnt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
